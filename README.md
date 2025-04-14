@@ -1,5 +1,5 @@
 # Stuff Versioned
-[![Coverage Status](https://coveralls.io/repos/github/andreypostal/php-stuff-versioned/badge.svg?branch=main)](https://coveralls.io/github/andreypostal/php-stuff-versioned?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/andreypostal/php-stuff-versioned/badge.svg?branch=main)](https://coveralls.io/github/andreypostal/php-stuff-versioned?branch=main&t=1)
 
 This is a light library with zero dependency that provides
 a version manager and interfaces for version
