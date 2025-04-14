@@ -7,7 +7,7 @@ control anything and with any desired backend (like file, mysql, mongodb, postgr
 ## Installation
 
 ```
-composer require andreypostal/php-pancake-object
+composer require andreypostal/php-stuff-versioned
 ```
 
 ## Available backends
