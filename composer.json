@@ -1,0 +1,27 @@
+{
+    "name": "andreypostal/php-data-seeder",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Postal",
+            "email": "andreypostal@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Andrey\\StuffVersioned\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Andrey\\StuffVersioned\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.1.2"
+    }
+}
