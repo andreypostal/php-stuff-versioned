@@ -46,9 +46,7 @@ class VersionManager implements VersionManagerInterface
             }
 
             if (isset($versionRuns[$i]) && $versionRuns[$i]->versionId !== $version->getId()) {
-                $this->logger?->warning(
-                    "Inconsistent versioning, found {$version->getId()} expected {$versionRuns[$i]->versionId} as {$i}th run",
-                );
+                $this->logger?->warning("Inconsistent versioning, found {$version->getId()} expected {$versionRuns[$i]->versionId} as {$i}th run");
             }
         }
 
@@ -67,9 +65,7 @@ class VersionManager implements VersionManagerInterface
 
         // Invalid configuration
         if ($currentVersionToExecute > $versionsAvailable) {
-            $this->logger?->warning(
-                'Number of versions executed exceeds available ones',
-            );
+            $this->logger?->warning('Number of versions executed exceeds available ones');
             return 0;
         }
 

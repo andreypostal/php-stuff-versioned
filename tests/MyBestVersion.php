@@ -10,6 +10,7 @@ readonly class MyBestVersion implements VersionInterface
     public function __construct(
         private string $versionId,
         private bool $fail = false,
+        private bool $checkResult = true,
     ) {
     }
 
@@ -36,6 +37,6 @@ readonly class MyBestVersion implements VersionInterface
 
     public function check(): bool
     {
-        return true;
+        return $this->checkResult;
     }
 }

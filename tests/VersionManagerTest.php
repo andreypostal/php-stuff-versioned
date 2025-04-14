@@ -38,4 +38,18 @@ class VersionManagerTest extends TestCase
         $executed = $manager->run();
         $this->assertEquals(0, $executed);
     }
+
+    public function testVersionShouldNotRun(): void
+    {
+        $manager = new VersionManager(new InMemoryBackend());
+
+        $manager->addVersion(new MyBestVersion('A', true, false));
+
+        $executed = $manager->run();
+        $this->assertEquals(0, $executed);
+        $manager->addVersion(new MyBestVersion('B'));
+
+        $executed = $manager->run();
+        $this->assertEquals(1, $executed);
+    }
 }
